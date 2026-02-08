@@ -1,10 +1,11 @@
-# -Car-Price-Prediction-Recommendation-System-AWS-ML-
+🚗 Car-Price-Prediction-Recommendation-System-AWS-ML-
 An end-to-end machine learning web application that predicts vehicle prices and recommends similar cars based on user input.
 
 📌 Project Overview
 This system uses an XGBoost regression model trained on car listing data to estimate vehicle prices. The model is deployed using AWS SageMaker, and a Django web application interacts with the deployed endpoint to generate real-time predictions.
-
 The system also recommends cars within a similar price range and stores prediction history in a database.
+
+User inputs vehicle details through a Django web interface. The application sends the data to a deployed XGBoost model on AWS SageMaker for real-time price prediction. Based on the predicted price, the system retrieves similar vehicles from a dataset stored in Amazon S3 and displays the top recommendations. All predictions are stored in PostgreSQL for tracking and analysis.
 
 ⚙️ Features
 
